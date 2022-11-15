@@ -1,4 +1,4 @@
-package com.javatpoint.server.main.user;
+package com.javatpoint.server.main.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
