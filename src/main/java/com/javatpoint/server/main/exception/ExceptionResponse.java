@@ -1,30 +1,27 @@
 package com.javatpoint.server.main.exception;
-
-public class ExceptionResponse {
-
-	private String timeStamp;
-	private String message;
-	private String detail;
-
-	public ExceptionResponse(String timeStamp, String message, String detail) {
-		super();
-		this.timeStamp = timeStamp;
-		this.message = message;
-		this.detail = detail;
-	}
-
-	public String getTimeStamp() {
-		return timeStamp;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public String getDetail() {
-		return detail;
-	}
-	
-	
-
+import java.util.Date;
+public class ExceptionResponse 
+{
+private Date timestamp;
+private String message;
+private String details;
+public ExceptionResponse(Date timestamp, String message, String details) 
+{
+super();
+this.timestamp = timestamp;
+this.message = message;
+this.details = details;
+}
+public Date getTimestamp() 
+{
+return timestamp;
+}
+public String getMessage() 
+{
+return message;
+}
+public String getDetails()
+{
+return details;
+}
 }
